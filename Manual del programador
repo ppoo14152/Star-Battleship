@@ -1,0 +1,222 @@
+PROGRAMACION ORIENTADA A OBJETOS
+PROPUESTA DE PROYECTO
+Semestre 2014-2015/I
+
+
+No de proyecto
+Nombre del proyecto
+Integrantes del equipo
+Objetivo del proyecto
+Descripción del proyecto
+Descripción e imágenes de cada nivel
+Nivel Principiante
+Nivel Intermedio
+Nivel Avanzado
+Diagrama de clases UML
+Características y comportamiento de cada clase
+Herencia y polimorfismo
+Cronograma de actividades (plan de trabajo)
+Bitácora de actividades (historial)
+
+
+
+No de proyecto
+Nombre del proyecto
+Star Battleship
+Integrantes del equipo
+Guillermo Medina Aguilar
+Rodolfo Giron De La Garza
+Objetivo del proyecto
+El juego consiste en que el jugador está en una nave y tiene que encargar de eliminar a las naves enemigas para poder pasar  el juego, al eliminar las naves ganaras puntos y tienes tres vidas o sino perderás el juego.
+ Descripción del proyecto
+Una nave tendrá que recorrer el espacio en busca de un planeta lejano llamado C-123, pero en el camino tiene que enfrentarse con una extraña civilización alienígena para poder llegar al planeta, consta de 3 niveles para llegar al planeta. 
+En el primer nivel te enfrentaras a un escuadrón de naves en las cuales irán a cierta velocidad viajando por el espacio, al eliminar todas las naves del escuadrón podrás acceder al segundo nivel.
+Segundo nivel te enfrentaras a 2 escuadrones en las cuales irán a cierta velocidad viajando por el espacio, al eliminar todas las naves de los dos escuadrones podrás acceder al tercer y último nivel que se desarrollara en el planeta C-123
+Tercer nivel llegas al planeta y te enfrentas con una nave nodriza en la cual es difícil de eliminar ya que tiene más vitalidad que una nave enemiga normal. Al vencer la nave nodriza habrás aterrizado en el planeta C-123 y habrás cumplido niveles, al lograr esto pasaras el juego.
+Si mueres dentro de los 3 niveles tendrás que empezar de nuevo, es decir si pierdes las 3 vidas empiezas desde el inicio.
+El fondo donde se desarrollara el juego será una parte en el espacio que se utilizara un fondo negro con estrellas y el otro fondo se utilizara el del planeta. En la esquina superior izquierda contara con las opciones,  también contara con el puntaje.
+Descripción e imágenes de cada nivel
+●	Nivel Principiante
+
+En el primer nivel te enfrentaras a un escuadrón de naves en las cuales irán a cierta velocidad viajando por el espacio, al eliminar todas las naves del escuadrón podrás acceder al segundo nivel.
+
+
+
+
+
+
+●	Nivel Intermedio
+ 
+Segundo nivel te enfrentaras a 2 escuadrones en las cuales irán a cierta velocidad viajando por el espacio, al eliminar todas las naves de los dos escuadrones podrás acceder al tercer y último nivel que se desarrollara en el planeta C-123
+
+
+
+
+
+
+
+
+
+
+
+
+Nivel Avanzado
+
+Tercer nivel llegas al planeta y te enfrentas con una nave nodriza en la cual es difícil de eliminar ya que tiene más vitalidad que una nave enemiga normal. Al vencer la nave nodriza habrás aterrizado en el planeta C-123 y habrás cumplido niveles, al lograr esto pasaras el juego.
+
+
+
+
+
+Diagrama de clases UML
+ 
+Características y comportamiento de cada clase
+Escribir aquí las características de las principales clases de su proyecto.
+
+Nombre de la clase:	Nave
+Características:	Una variable coo de tipo entero con valor 0
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	El metodo atWorldEdge no sale de las paredes del juego
+	
+•	Para añadir más renglones a la tabla primero debe seleccionar el renglón y después desde el menú “Tabla” seleccionar la opción “Insertar una fila debajo”. 
+Nombre de la clase:	Enemigo
+Características:	La variable vida  de tipo int para llevar la cuenta de la vida
+	La variable count de tipo int para llevar la cuenta del tiempo
+	La variable puntos de tipo int para llevar la cuenta de puntos
+Comportamiento:	El metodo act que se ejecuta de forma inicial
+	El metodo atWorldEdge que no deja salir de las paredes
+	
+
+Nombre de la clase:	Enemigo2
+Características:	La variable vida de tipo int es de 100 que cuenta la vida del enemigo
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Enemigo3
+Características:	La variable vida de tipo int es de 3 que cuenta la vida del enemigo
+	La variable counter de tipo int es el que lleva la cuenta
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Espacio
+Características:	
+	
+	
+Comportamiento:	El metodo inicial de espacio que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Puntaje
+Características:	La variable count de tipo int lleva la cuenta del tiempo
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Bala
+Características:	La variable coo de tipo int es la que lleva la cuenta en esta clase
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	El metodo de atWorldEdge es el que lo destruye cuando choca con la pared
+	
+
+Nombre de la clase:	Balamala
+Características:	
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	El metodo de atWorldEdge es el que destruye la bala cuando choca con la pared
+	
+
+Nombre de la clase:	Asteroide
+Características:	La variable timer es de tipo int y es el que lleva la cuenta en esta clase
+	La variable vida es la que lleva la vida del asteroide
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Nivel2
+Características:	La variable count de tipo int que es 0 que empieza la cuenta
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Nivel3
+Características:	La variable count de tipo int que es 0 que empieza la cuenta
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	nivel
+Características:	La variable co de tipo int que es 0 que empieza la cuenta
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	El metodo de atWorldEdge que no permite que otros choquen con las paredes
+	
+
+Nombre de la clase:	explosion
+Características:	La variable count que es de tipo int que lleva la cuenta para desaparecer la explosion
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+Nombre de la clase:	Button
+Características:	
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+
+
+Nombre de la clase:	Fin
+Características:	
+	
+	
+Comportamiento:	El metodo inicial de act que se ejecuta siempre
+	
+	
+* Para añadir más renglones a la tabla primero debe seleccionar el renglón y después desde el menú “Tabla” seleccionar la opción “Insertar una fila debajo”
+Herencia y polimorfismo
+La herencia se utiliza en todas las clases ya que las clases utilizadas en el juego son hijos de la clase Actor, tambien tenemos la clase espacio que es hija de la clase World. El polimorfismo tambien se utiliza ya que los objetos se envian diferentes mensajes a otros tipos de objetos para que estos mismos puedan interactuar.
+Cronograma de actividades (plan de trabajo) 
+Describir todas las actividades por realizar desde la propuesta del proyecto hasta la entrega considerando los siguientes entregables:
+○	Manual del usuario
+○	Manual del programador  (este documento) 
+○	Código
+○	Video
+○	Link a Greenfoot
+
+Fecha de Inicio	Fecha de Término	Actividad por realizar
+20 de Enero	20 de Febrero	Primer avanze
+20 de Febrero	20 de Marzo	Segundo avanze
+20 de Marzo	20 de Abril	Tercer avanze
+20 de Abril	26 de Mayo	Cuarto avanze
+* Para añadir más renglones a la tabla debe seleccionar primero la tabla y después desde el menú “Tabla” seleccionar la opción “Insertar una fila debajo”
+Bitácora de actividades (historial)
+Esta parte será llenada durante la elaboración del proyecto. Aquí se deben describir cada una de las actividades realizadas desde la propuesta hasta la entrega del proyecto.
+
+Fecha (dd/mm/aa)	Descripción de la actividad realizada
+20 de Febrero	Primer avanze
+20 de Marzo	Segundo avanze
+20 de Abril	Tercer avanze
+26 de Mayo	Cuarto avanze, entrega de manual de usuario, programador, codigo, video, link
+	
+
